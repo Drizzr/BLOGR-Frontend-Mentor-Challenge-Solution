@@ -403,7 +403,7 @@ a, a:visited, a:hover {
   left: -1%;
   height: 25rem;
   width: 180%;
-  background-image: url("/images/bg-pattern-intro-desktop.svg");
+  background-image: url("./images/bg-pattern-intro-desktop.svg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -534,7 +534,7 @@ a, a:visited, a:hover {
 }
 
 .hero__image {
-  background-image: url("/images/illustration-editor-desktop.svg");
+  background-image: url("./images/illustration-editor-desktop.svg");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -544,7 +544,7 @@ a, a:visited, a:hover {
 
 @media (max-width: 63.9375em) {
   .hero__image {
-    background-image: url("/images/illustration-editor-mobile.svg");
+    background-image: url("./images/illustration-editor-mobile.svg");
     height: 35rem;
     width: 35rem;
   }
@@ -621,7 +621,7 @@ a, a:visited, a:hover {
 }
 
 .sota__image_phones {
-  background-image: url("/images/illustration-phones.svg");
+  background-image: url("./images/illustration-phones.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 5rem;
@@ -691,7 +691,7 @@ a, a:visited, a:hover {
 }
 
 .fos__image {
-  background-image: url("/images/illustration-laptop-desktop.svg");
+  background-image: url("./images/illustration-laptop-desktop.svg");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -702,7 +702,7 @@ a, a:visited, a:hover {
 
 @media (max-width: 63.9375em) {
   .fos__image {
-    background-image: url("/images/illustration-laptop-mobile.svg");
+    background-image: url("./images/illustration-laptop-mobile.svg");
     height: 30rem;
     width: 30rem;
     margin-left: 0rem;
