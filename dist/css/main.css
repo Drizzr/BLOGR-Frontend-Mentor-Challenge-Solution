@@ -621,7 +621,7 @@ a, a:visited, a:hover {
 }
 
 .sota__image_phones {
-  background-image: url("./images/illustration-phones.svg");
+  background-image: url("/images/illustration-phones.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 5rem;
