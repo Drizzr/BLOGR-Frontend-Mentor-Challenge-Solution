@@ -3,6 +3,7 @@ This Project is a solution to the Frontend Mentor BLOGR Challenge.
 The project is mainly written in scss and java script. Those files can be found in the dist/scss (/js) folder.
 
 source: https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP
+
 https://drizzr.github.io/BLOGR-Frontend-Mentor-Challenge-Solution/
 
 ![Bildschirmfoto 2022-06-14 um 23 28 56](https://user-images.githubusercontent.com/76044729/173692478-e7631de9-a767-46da-bd46-e9e5ea6ebc18.png)
