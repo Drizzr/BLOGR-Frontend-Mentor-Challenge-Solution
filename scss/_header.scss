@@ -1,0 +1,240 @@
+.header {
+
+    &.open {
+
+        .menu-overlay {
+            display: block;
+        }
+
+        .toggle {
+
+            > span {
+                background-color: $veryDarkBlackBlue;
+            }
+
+            > span:first-child {
+                transform: rotate(45deg);
+            } 
+            > span:nth-child(2) {
+                opacity: 0;
+            } 
+            > span:last-child {
+                transform: rotate(-45deg);
+            } 
+        }
+
+    }
+
+    .menu-overlay {
+        position: fixed;
+        display: block;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        background-image: linear-gradient(to right, $veryDarkGreyishBlue, transparent);
+        z-index: 2;
+    }
+
+    .toggle {
+        position: fixed;
+        overflow: hidden;
+        z-index: 10;
+        top: 40px;
+        left: 90%;
+    
+        > span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background-color: $white;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+    
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    
+    }
+
+    > nav {
+        position: fixed;
+        padding-top: 1.5625rem;
+        padding-bottom: 1.0625rem;
+        color: $white;
+        font-size: $font-sm;
+        font-weight: $light;
+        width: 100%;
+        top: 0;
+        z-index: 3;
+    }
+
+    &__logo {
+        > img {
+            padding: 0 3.0625rem;
+
+            @include breaktpoint-down(medium) {
+                padding: 0 2rem;
+            }
+        }
+
+    }
+
+    &__buttons {
+        margin-left: auto;
+
+        >a:last-child {
+            margin-right: 3.0625rem;;
+        }
+    }
+
+    &_intro_overlay {
+        top: 0;
+        background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        border-bottom-left-radius: 5rem;
+        min-height: 25rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: $white;
+
+        @include breaktpoint-down(medium) {
+            padding: 0 0.8rem;
+        }
+
+        @include breaktpoint-down(small) {
+            font-size: $font-sm;
+        }
+
+        > h1 {
+            text-align: center;
+        }
+
+        > p {
+            text-align: center;
+        }
+
+        > * {
+            z-index: 1;
+        }
+
+        @include breaktpoint-down(medium) {
+            min-height: 35rem;
+        }
+        
+
+        .buttons {
+            margin-top: 2rem;
+
+            > a {
+                font-size: $font-sm;
+
+                @include breaktpoint-down(medium) {
+                    padding: 0.8rem 1rem;
+                    border: 0.1rem solid $white;
+
+                    &:first-child {
+                        margin-right: 0.5rem;
+                    }
+                }
+
+                &:last-child {
+                    &:hover {
+                        background-color: $white;
+                        color: $veryDarkBlackBlue;
+                    }
+                }
+                
+                &:first-child {
+                    &:hover {
+                        @include breaktpoint-down(medium) {
+                            background-color: $white;
+                            color: $veryDarkBlackBlue;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &_img {
+            position: absolute;
+            top: 0;
+            left: -1%;
+            height: 25rem;
+            width: 180%;
+            background-image: url("/images/bg-pattern-intro-desktop.svg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 0;
+
+            @include breaktpoint-down(medium) {
+                top: 0%;
+                left: -50%;
+                height: 35rem;
+                width: 300%;
+            }
+
+            
+        }
+
+
+    }
+
+    &__menu {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        right: 0;
+        top: 0;
+        background: $white;
+        padding: 1.8rem;
+        z-index: 3;
+        padding-top: 8rem;
+
+        @include breaktpoint-down(small) {
+            width: 100%;
+        }
+
+        .dropdown-menus {
+            > div {
+                &:not(:last-child) {
+                    padding-bottom: 1rem;
+                }
+                > a {
+                    color: $mediumGray;
+                    font-size: $font-lg;
+                }
+
+                &:hover {
+                    > a {
+                        color: $veryDarkBlackBlue;
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            padding: 2rem 0rem;
+
+            > a {
+                color: $veryDarkBlackBlue;
+                text-align: center;
+                width: 10rem;
+                border: 0.1rem solid $veryLightRed;
+
+                &:hover {
+                    border-color: $lightRed;
+                    background-color: $lightRed;
+                    color: $white;
+                }
+
+                &:first-child {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+}

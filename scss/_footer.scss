@@ -1,0 +1,64 @@
+.footer {
+    background-color: $veryDarkBlackBlue;
+    border-top-right-radius: 5rem;
+    min-height: 25rem;
+    margin-top: 4rem;
+
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include breaktpoint-down(medium) {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 3rem;
+        }
+
+        > div {
+
+            padding-top: 3rem;
+
+            @include breaktpoint-down(medium) {
+                padding-top: 1rem;
+                text-align: center;
+            }
+
+
+            > h4 {
+                color: $white;
+            }
+
+            > a {
+                color: $mediumGray;
+
+                &:not(:last-child) {
+                    padding-bottom: 0.4rem;
+                }
+
+                &:hover {
+                    color: $white;
+                }
+            }
+
+            &:last-child {
+                padding-right: 10rem;
+
+                @include breaktpoint-down(medium) {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        padding-top: 3rem;
+        padding-left: 8rem;
+
+        @include breaktpoint-down(medium) {
+            transform: scale(0.7);
+            padding-left: 0;
+        }
+    }
+}

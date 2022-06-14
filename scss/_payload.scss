@@ -1,0 +1,182 @@
+.hero {
+    
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include breaktpoint-down(medium) {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__headline {
+        color: $veryDarkBlue;
+        text-align: center;
+        margin: 0;
+        margin-top: 2rem;
+
+        @include breaktpoint-up(large) {
+            margin-top: 6rem;
+        }
+    }
+
+    &__text {
+        color: $veryDarkBlue;
+        text-align: center;
+        padding: 0 2rem;
+
+        > p {
+            color: $mediumGray;
+        }
+
+        @include breaktpoint-up(large) {
+            padding: 4rem 4rem 4rem 8rem;
+            width: 60%;
+            text-align: left;
+        }
+    }
+
+    &__image {
+        background-image: url("/images/illustration-editor-desktop.svg");
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 40rem;
+        width: 40rem;
+
+        @include breaktpoint-down(medium) {
+            background-image: url("/images/illustration-editor-mobile.svg");
+            height: 35rem;
+            width: 35rem;
+        }
+
+        @include breaktpoint-down(small) {
+            height: 18rem;
+            width: 18rem;
+        }
+    }
+}
+
+.sota {
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    background-image: linear-gradient(to right, rgb(41, 42, 59), rgb(52, 55, 84));
+    min-height: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+    @include breaktpoint-down(medium) {
+        margin-bottom: 0rem;
+    }
+
+
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        @include breaktpoint-down(medium) {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+
+    &__text {
+        position: relative;
+        float: right;
+        color: $white;
+        width: 55%;
+        padding-right: 6rem;
+
+        @include breaktpoint-down(medium) {
+            width: 100%;
+            text-align: center;
+            padding: 0 2rem 3rem 2rem;
+        }
+    }
+
+    &__image_phones {
+        background-image: url("/images/illustration-phones.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 5rem;
+        width: 500px;
+        height: 500px;
+
+        @include breaktpoint-down(medium) {
+            margin-right: 0;
+            width: 380px;
+            height: 380px;
+        }
+
+        @include breaktpoint-down(small) {
+            height: 200px;
+            width: 200px;
+            margin-right: 0rem;
+
+        }
+    }
+
+    
+
+}
+
+.fos {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include breaktpoint-down(medium) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__text {
+        color: $veryDarkBlue;
+        text-align: center;
+
+        > p {
+            color: $mediumGray;
+        }
+
+        @include breaktpoint-up(large) {
+            text-align: left;
+            padding-left: 3rem;
+            width: 50%;       
+
+        }
+    }
+
+    &__image {
+        background-image: url("/images/illustration-laptop-desktop.svg");
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 35rem;
+        width: 35rem;
+        margin-left: 5rem;
+
+        @include breaktpoint-down(medium) {
+            background-image: url("/images/illustration-laptop-mobile.svg");
+            height: 30rem;
+            width: 30rem;
+            margin-left: 0rem;
+
+        }
+
+        @include breaktpoint-down(small) {
+            height: 20rem;
+            width: 20rem;
+            margin-left: 0rem;
+
+        }
+    }
+}
