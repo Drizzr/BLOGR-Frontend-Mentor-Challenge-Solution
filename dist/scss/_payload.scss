@@ -40,7 +40,7 @@
     }
 
     &__image {
-        background-image: url("/images/illustration-editor-desktop.svg");
+        background-image: url("../../images/illustration-editor-desktop.svg");
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -48,7 +48,7 @@
         width: 40rem;
 
         @include breaktpoint-down(medium) {
-            background-image: url("/images/illustration-editor-mobile.svg");
+            background-image: url("../../images/illustration-editor-mobile.svg");
             height: 35rem;
             width: 35rem;
         }
@@ -102,7 +102,7 @@
     }
 
     &__image_phones {
-        background-image: url("/images/illustration-phones.svg");
+        background-image: url("../../images/illustration-phones.svg");
         background-size: contain;
         background-repeat: no-repeat;
         margin-right: 5rem;
@@ -156,7 +156,7 @@
     }
 
     &__image {
-        background-image: url("/images/illustration-laptop-desktop.svg");
+        background-image: url("../../images/illustration-laptop-desktop.svg");
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -165,7 +165,7 @@
         margin-left: 5rem;
 
         @include breaktpoint-down(medium) {
-            background-image: url("/images/illustration-laptop-mobile.svg");
+            background-image: url("../../images/illustration-laptop-mobile.svg");
             height: 30rem;
             width: 30rem;
             margin-left: 0rem;
