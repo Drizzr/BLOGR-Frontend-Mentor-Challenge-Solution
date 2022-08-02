@@ -4,7 +4,7 @@ The project is mainly written in scss and java script. Those files can be found 
 
 source: https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP
 
-https://drizzr.github.io/BLOGR-Frontend-Mentor-Challenge-Solution/    currently offline
+https://drizzr.github.io/BLOGR-Frontend-Mentor-Challenge-Solution/  
 
 ![Bildschirmfoto 2022-06-14 um 23 28 56](https://user-images.githubusercontent.com/76044729/173692478-e7631de9-a767-46da-bd46-e9e5ea6ebc18.png)
 ![Bildschirmfoto 2022-06-14 um 23 29 17](https://user-images.githubusercontent.com/76044729/173692485-3afc40e5-29e3-4e2a-ae4b-500f531cde45.png)
